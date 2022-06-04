@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82628750-9101-426a-b519-fa81709983ac" name="Changes" comment="" />
+    <list default="true" id="82628750-9101-426a-b519-fa81709983ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,27 +61,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/oswal/IdeaProjects/turma",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oswal/IdeaProjects/turma&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.TestaFuncionario">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java.com.modelo.Main" />
@@ -166,6 +169,7 @@
       <workItem from="1654116116223" duration="5653000" />
       <workItem from="1654135066905" duration="252000" />
       <workItem from="1654159901758" duration="7468000" />
+      <workItem from="1654373408386" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit da avaliação de java">
       <created>1654116403327</created>
@@ -209,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654360053826</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ignorando arquivos e pastas">
+      <created>1654360250002</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654360250002</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fim da Avaliação.">
+      <created>1654360420034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654360420034</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +293,9 @@
     <MESSAGE value="Programa Quiz terminado e em funcionamento." />
     <MESSAGE value="Programa Login terminado e em funcionamento." />
     <MESSAGE value="Programa Cadastro terminado e em funcionamento. Avaliação terminada." />
-    <option name="LAST_COMMIT_MESSAGE" value="Programa Cadastro terminado e em funcionamento. Avaliação terminada." />
+    <MESSAGE value="ignorando arquivos e pastas" />
+    <MESSAGE value="Fim da Avaliação." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fim da Avaliação." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

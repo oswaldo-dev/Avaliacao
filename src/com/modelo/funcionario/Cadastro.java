@@ -12,6 +12,15 @@ public class Cadastro extends Funcionario {
         Scanner f = new Scanner(System.in);
         setQuantidadeDeFuncionarios(Integer.parseInt(f.nextLine()));
 
+        cadastra();
+
+        System.out.println("##### LISTA DE FUNCIONÁRIOS #####");
+
+        percorreLista();
+
+    }
+
+    public void cadastra() {
         for (int i = 0; i < getQuantidadeDeFuncionarios(); i++) {
             Funcionario j = new Funcionario();
             System.out.println("Informe o nome do funcionário: ");
@@ -23,9 +32,9 @@ public class Cadastro extends Funcionario {
             bonificacao(j);
             funcionarios.add(j);
         }
+    }
 
-        System.out.println("##### LISTA DE FUNCIONÁRIOS #####");
-
+    public void percorreLista(){
         for (Funcionario y : funcionarios) {
             System.out.println("Funcionário: " + y.getNome());
             System.out.println("Salário: " + y.getSalario());
@@ -41,7 +50,6 @@ public class Cadastro extends Funcionario {
             System.out.println("-----------------------------");
             System.out.println();
         }
-
     }
 
     public void bonificacao(Funcionario x) {
