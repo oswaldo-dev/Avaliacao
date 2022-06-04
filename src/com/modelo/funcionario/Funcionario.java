@@ -9,15 +9,34 @@ public class Funcionario {
     private String nome;
     private double salario;
     private int quantidadeDeFuncionarios;
+    private double salarioNovo;
+    private double bonus;
+    private double desconto;
 
 
-
-    public Funcionario() {
-        System.out.println("Informe quantos funcionários serão cadastrados: ");
-        Scanner f = new Scanner(System.in);
-        setQuantidadeDeFuncionarios(Integer.parseInt(f.nextLine()));
+    public double getSalarioNovo() {
+        return salarioNovo;
     }
 
+    public void setSalarioNovo(double salarioNovo) {
+        this.salarioNovo = salarioNovo;
+    }
+
+    public double getBonus() {
+        if (getSalario() <= 1000) {
+            bonus = getSalario() * 0.20;
+        } else if (getSalario() < 2000) {
+            bonus = getSalario() * 0.10;
+        }
+        return bonus;
+    }
+
+    public double getDesconto() {
+        if (getSalario() > 2000) {
+            desconto = getSalario() * 0.10;
+        }
+        return desconto;
+    }
 
     public String getNome() {
         return nome;

@@ -5,29 +5,54 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Cadastro extends Funcionario {
-
-    private int quantidadeDeCadastro;
     List<Funcionario> funcionarios = new ArrayList<>();
 
     public Cadastro() {
-        Funcionario f = new Funcionario();
+        System.out.println("Informe quantos funcionários serão cadastrados: ");
+        Scanner f = new Scanner(System.in);
+        setQuantidadeDeFuncionarios(Integer.parseInt(f.nextLine()));
+
         for (int i = 0; i < getQuantidadeDeFuncionarios(); i++) {
+            Funcionario j = new Funcionario();
             System.out.println("Informe o nome do funcionário: ");
             Scanner n  = new Scanner(System.in);
-            setNome(n.nextLine());
+            j.setNome(n.nextLine());
             System.out.println("Informe o salário desse funcionário: ");
             Scanner s = new Scanner(System.in);
-            setSalario(Double.parseDouble(s.nextLine()));
+            j.setSalario(Double.parseDouble(s.nextLine()));
+            bonificacao(j);
+            funcionarios.add(j);
+        }
+
+        System.out.println("##### LISTA DE FUNCIONÁRIOS #####");
+
+        for (Funcionario y : funcionarios) {
+            System.out.println("Funcionário: " + y.getNome());
+            System.out.println("Salário: " + y.getSalario());
+            if (y.getSalario() > 2000) {
+                System.out.println("Desconto: " + (y.getSalario() - y.getSalarioNovo()));
+            } else if (y.getSalario() < 2000){
+                System.out.println("Bônus: " + (y.getSalarioNovo() - y.getSalario()));
+            } else if (y.getSalario() == 2000) {
+                System.out.println("Não é bonificado!!");
+            }
+            System.out.println("Salário líquido: " + y.getSalarioNovo());
+            System.out.println();
+            System.out.println("-----------------------------");
+            System.out.println();
         }
 
     }
 
-
-    public int getQuantidadeDeCadastro() {
-        return quantidadeDeCadastro;
-    }
-
-    public void setQuantidadeDeCadastro(int quantidadeDeCadastro) {
-        this.quantidadeDeCadastro = quantidadeDeCadastro;
+    public void bonificacao(Funcionario x) {
+        if (x.getSalario() <= 1000) {
+            x.setSalarioNovo(x.getSalario() + x.getBonus());
+        } else if (x.getSalario() < 2000) {
+            x.setSalarioNovo(x.getSalario() + x.getBonus());
+        } else if (x.getSalario() > 2000) {
+            x.setSalarioNovo(x.getSalario() - x.getDesconto());
+        } else if (x.getSalario() == 2000) {
+            x.setSalarioNovo(x.getSalario());
+        }
     }
 }
