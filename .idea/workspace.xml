@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82628750-9101-426a-b519-fa81709983ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/modelo/funcionario/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/modelo/funcionario/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/modelo/teste/TestaFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/modelo/teste/TestaFuncionario.java" afterDir="false" />
-    </list>
+    <list default="true" id="82628750-9101-426a-b519-fa81709983ac" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654357001649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Programa Cadastro terminado e em funcionamento. Avaliação terminada.">
+      <created>1654360053826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654360053826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +274,8 @@
     <MESSAGE value="Primeiro commit da avaliação de java" />
     <MESSAGE value="Programa Quiz terminado e em funcionamento." />
     <MESSAGE value="Programa Login terminado e em funcionamento." />
-    <option name="LAST_COMMIT_MESSAGE" value="Programa Login terminado e em funcionamento." />
+    <MESSAGE value="Programa Cadastro terminado e em funcionamento. Avaliação terminada." />
+    <option name="LAST_COMMIT_MESSAGE" value="Programa Cadastro terminado e em funcionamento. Avaliação terminada." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
