@@ -11,10 +11,10 @@ public class Login {
     private String userInput;
     private String passwordInput;
     LocalTime horarioAtual = LocalTime.now();
-    LocalTime bomDia = LocalTime.of(5, 59);
-    LocalTime boaTarde = LocalTime.of(11, 59);
-    LocalTime boaNoite = LocalTime.of(17,59);
-    LocalTime boaMadrugada = LocalTime.of(23,59);
+    LocalTime bomDia = LocalTime.parse("05:59:59.999");
+    LocalTime boaTarde = LocalTime.parse("11:59:59.999");
+    LocalTime boaNoite = LocalTime.parse("17:59:59.999");
+    LocalTime boaMadrugada = LocalTime.parse("23:59:59.999");
 
     public Login() {
         System.out.println("Informe seu username: ");
@@ -30,13 +30,13 @@ public class Login {
 
     public void validaHorario() {
         if (Objects.equals(getUserInput(), getUser()) && Objects.equals(getPasswordInput(), getPassword())) {
-            if (horarioAtual.isAfter(bomDia)) {
-                System.out.println("Bom dia, você se logou ao nosso sistema.");
-            } else if (horarioAtual.isAfter(boaTarde)) {
-                System.out.println("Bom tarde, você se logou ao nosso sistema.");
+            if (horarioAtual.isAfter(boaMadrugada)) {
+                System.out.println("Boa madrugada, você se logou ao nosso sistema.");
             } else if (horarioAtual.isAfter(boaNoite)) {
-                System.out.println("Bom noite, você se logou ao nosso sistema.");
-            } else if (horarioAtual.isAfter(boaMadrugada)) {
+                System.out.println("Boa noite, você se logou ao nosso sistema.");
+            } else if (horarioAtual.isAfter(boaTarde)) {
+                System.out.println("Boa Tarde, você se logou ao nosso sistema.");
+            } else if (horarioAtual.isAfter(bomDia)) {
                 System.out.println("Bom madrugada, você se logou ao nosso sistema.");
             }
         } else {
