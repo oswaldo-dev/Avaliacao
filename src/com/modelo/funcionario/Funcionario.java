@@ -10,26 +10,14 @@ public class Funcionario {
     private double salario;
     private int quantidadeDeFuncionarios;
 
-    int i;
+
 
     public Funcionario() {
         System.out.println("Informe quantos funcionários serão cadastrados: ");
         Scanner f = new Scanner(System.in);
         setQuantidadeDeFuncionarios(Integer.parseInt(f.nextLine()));
-        List<Funcionario> funcionarios = new ArrayList<>(getQuantidadeDeFuncionarios());
-        cadastraFuncionarios();
     }
 
-    public void cadastraFuncionarios() {
-        for (i = 0; i < getQuantidadeDeFuncionarios(); i++) {
-            System.out.println("Informe o nome do funcionário: ");
-            Scanner n  = new Scanner(System.in);
-            setNome(n.nextLine());
-            System.out.println("Informe o salário desse funcionário: ");
-            Scanner s = new Scanner(System.in);
-            setSalario(Double.parseDouble(s.nextLine()));
-        }
-    }
 
     public String getNome() {
         return nome;
