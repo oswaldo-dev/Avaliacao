@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82628750-9101-426a-b519-fa81709983ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/modelo/funcionario/Cadastro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaFuncionario">
+  <component name="RunManager" selected="Application.TestaLogin">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java.com.modelo.Main" />
       <module name="Avaliacao" />
@@ -150,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestaFuncionario" />
         <item itemvalue="Application.TestaLogin" />
+        <item itemvalue="Application.TestaFuncionario" />
         <item itemvalue="Application.com.modelo.teste.TestaQuiz" />
         <item itemvalue="Application.com.modelo.Main" />
         <item itemvalue="Application.Main" />
@@ -169,7 +169,7 @@
       <workItem from="1654116116223" duration="5653000" />
       <workItem from="1654135066905" duration="252000" />
       <workItem from="1654159901758" duration="7468000" />
-      <workItem from="1654373408386" duration="280000" />
+      <workItem from="1654373408386" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit da avaliação de java">
       <created>1654116403327</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654360420034</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Limpando o código da classe Cadastro.">
+      <created>1654373858970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654373858970</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +302,8 @@
     <MESSAGE value="Programa Cadastro terminado e em funcionamento. Avaliação terminada." />
     <MESSAGE value="ignorando arquivos e pastas" />
     <MESSAGE value="Fim da Avaliação." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fim da Avaliação." />
+    <MESSAGE value="Limpando o código da classe Cadastro." />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpando o código da classe Cadastro." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

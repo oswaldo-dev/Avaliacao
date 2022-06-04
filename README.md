@@ -18,3 +18,6 @@ Na minha opnião usar o método scrum ajuda a realizar o projeto de forma mais r
 <br>
 ## Questão número 5.
 O Product Owner é responsavel por gerenciar o product backlog, ele é responsavel por quais recursos e funcionalidades serão construidos e em qual ordem eles devem ser feitos.
+<br>
+<br>
+O login e senha da TestaLogin é Login = username, password = 123456.
