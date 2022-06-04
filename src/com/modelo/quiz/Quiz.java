@@ -31,6 +31,7 @@ public class Quiz extends Perguntas{
             perguntas.add(pergunta);
         }
 
+
         System.out.println("Nome: " + getNome());
         System.out.println("Acertos: " + getAcertos());
         System.out.println("Erros: " + getErros());
