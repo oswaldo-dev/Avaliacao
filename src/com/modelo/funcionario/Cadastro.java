@@ -7,10 +7,22 @@ import java.util.Scanner;
 public class Cadastro extends Funcionario {
     List<Funcionario> funcionarios = new ArrayList<>();
 
+    private int qtdefuncionarios;
+
+    Scanner input;
+
+    public int getQtdefuncionarios() {
+        return qtdefuncionarios;
+    }
+
+    public void setQtdefuncionarios(int qtdefuncionarios) {
+        this.qtdefuncionarios = qtdefuncionarios;
+    }
+
     public Cadastro() {
         System.out.println("Informe quantos funcionários serão cadastrados: ");
-        Scanner f = new Scanner(System.in);
-        setQuantidadeDeFuncionarios(Integer.parseInt(f.nextLine()));
+        input = new Scanner(System.in);
+        setQtdefuncionarios(Integer.parseInt(input.nextLine()));
 
         cadastra();
 
@@ -21,46 +33,47 @@ public class Cadastro extends Funcionario {
     }
 
     public void cadastra() {
-        for (int i = 0; i < getQuantidadeDeFuncionarios(); i++) {
-            Funcionario j = new Funcionario();
+        for (int i = 0; i < getQtdefuncionarios(); i++) {
+            Funcionario funcionario = new Funcionario();
             System.out.println("Informe o nome do funcionário: ");
-            Scanner n  = new Scanner(System.in);
-            j.setNome(n.nextLine());
+            input  = new Scanner(System.in);
+            funcionario.setNome(input.nextLine());
             System.out.println("Informe o salário desse funcionário: ");
-            Scanner s = new Scanner(System.in);
-            j.setSalario(Double.parseDouble(s.nextLine()));
-            bonificacao(j);
-            funcionarios.add(j);
+            input = new Scanner(System.in);
+            funcionario.setSalario(Double.parseDouble(input.nextLine()));
+            bonificacao(funcionario);
+            funcionarios.add(funcionario);
         }
     }
 
     public void percorreLista(){
-        for (Funcionario y : funcionarios) {
-            System.out.println("Funcionário: " + y.getNome());
-            System.out.println("Salário: " + y.getSalario());
-            if (y.getSalario() > 2000) {
-                System.out.println("Desconto: " + (y.getSalario() - y.getSalarioNovo()));
-            } else if (y.getSalario() < 2000){
-                System.out.println("Bônus: " + (y.getSalarioNovo() - y.getSalario()));
-            } else if (y.getSalario() == 2000) {
+        for (Funcionario funcionario : funcionarios) {
+            System.out.println("Funcionário: " + funcionario.getNome());
+            System.out.println("Salário: " + funcionario.getSalario());
+            if (funcionario.getSalario() > 2000) {
+                System.out.println("Desconto: " + (funcionario.getSalario() - funcionario.getSalarioNovo()));
+            } else if (funcionario.getSalario() < 2000){
+                System.out.println("Bônus: " + (funcionario.getSalarioNovo() - funcionario.getSalario()));
+            } else if (funcionario.getSalario() == 2000) {
                 System.out.println("Não é bonificado!!");
             }
-            System.out.println("Salário líquido: " + y.getSalarioNovo());
+            System.out.println("Salário líquido: " + funcionario.getSalarioNovo());
             System.out.println();
             System.out.println("-----------------------------");
             System.out.println();
         }
+
     }
 
-    public void bonificacao(Funcionario x) {
-        if (x.getSalario() <= 1000) {
-            x.setSalarioNovo(x.getSalario() + x.getBonus());
-        } else if (x.getSalario() < 2000) {
-            x.setSalarioNovo(x.getSalario() + x.getBonus());
-        } else if (x.getSalario() > 2000) {
-            x.setSalarioNovo(x.getSalario() - x.getDesconto());
-        } else if (x.getSalario() == 2000) {
-            x.setSalarioNovo(x.getSalario());
+    public void bonificacao(Funcionario funcionario) {
+        if (funcionario.getSalario() <= 1000) {
+            funcionario.setSalarioNovo(funcionario.getSalario() + funcionario.getBonus());
+        } else if (funcionario.getSalario() < 2000) {
+            funcionario.setSalarioNovo(funcionario.getSalario() + funcionario.getBonus());
+        } else if (funcionario.getSalario() > 2000) {
+            funcionario.setSalarioNovo(funcionario.getSalario() - funcionario.getDesconto());
+        } else if (funcionario.getSalario() == 2000) {
+            funcionario.setSalarioNovo(funcionario.getSalario());
         }
     }
 }

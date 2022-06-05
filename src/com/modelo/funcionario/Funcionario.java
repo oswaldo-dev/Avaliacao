@@ -8,7 +8,6 @@ public class Funcionario {
 
     private String nome;
     private double salario;
-    private int quantidadeDeFuncionarios;
     private double salarioNovo;
     private double bonus;
     private double desconto;
@@ -54,11 +53,4 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public void setQuantidadeDeFuncionarios(int quantidadeDeFuncionarios) {
-        this.quantidadeDeFuncionarios = quantidadeDeFuncionarios;
-    }
-
-    public int getQuantidadeDeFuncionarios() {
-        return quantidadeDeFuncionarios;
-    }
 }
